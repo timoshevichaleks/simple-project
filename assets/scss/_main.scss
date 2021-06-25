@@ -1,0 +1,13 @@
+.main {
+  &-container {
+    height: 100vh;
+    padding: $gutter;
+
+    background-color: rgba($light-color, 0.11);
+  }
+  &-wrapper {
+    height: 100vh;
+
+    background-color: $light-color;
+  }
+}

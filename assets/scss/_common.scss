@@ -8,10 +8,11 @@ body {
 }
 
 html {
-  overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 16px;
+  overflow-y: scroll;
+
   font-family: Verdana, arial, sans-serif;
+  font-size: 16px;
   line-height: 1.15;
 }
 
@@ -22,6 +23,6 @@ a {
 .container {
   max-width: 850px;
   margin: auto;
-  padding-left: $gutter;
   padding-right: $gutter;
+  padding-left: $gutter;
 }
