@@ -1,0 +1,41 @@
+.header {
+  &-menu {
+    &__btn {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-color: rgba($dark-color, 0.35);
+      margin-bottom: 4px;
+      @media (min-width: $large + 1) {
+        display: none;
+      }
+      @media (max-width: $large) {
+        display: flex;
+      }
+      &-row {
+        position: relative;
+        width: 60%;
+        height: 2px;
+        margin: 2px 0;
+        transition: 0.5s;
+        background-color: $light-color;
+      }
+      &.active .header-menu__btn-row {
+        &:first-child {
+          top: 6px;
+          transform: rotate(-135deg);
+        }
+        &:last-child {
+          top: -6px;
+          transform: rotate(-225deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
