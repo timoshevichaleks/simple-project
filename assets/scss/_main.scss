@@ -1,13 +1,40 @@
 .main {
   &-container {
-    height: 100vh;
     padding: $gutter;
 
     background-color: rgba($light-color, 0.11);
   }
   &-wrapper {
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 
     background-color: $light-color;
+  }
+  &-content {
+    flex: 1 0 calc(100% - 300px);
+    order: 3;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 0 20px 15px 15px;
+    &__title {
+      color: $accent-color;
+
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    &__text {
+      text-align: justify;
+
+      color: $base-color;
+
+      font-size: 0.75rem;
+      line-height: 1.75em;
+      span {
+        color: #424242;
+
+        font-style: italic;
+      }
+    }
   }
 }
