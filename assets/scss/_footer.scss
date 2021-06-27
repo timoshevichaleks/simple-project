@@ -1,0 +1,86 @@
+.footer {
+  padding: 35px 0 1px;
+
+  background-color: rgba($dark-color, 0.4);
+  &-wrapper {
+    display: flex;
+  }
+  &-left {
+    order: 1;
+  }
+  &-right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    order: 2;
+    &__logo {
+      margin: 15px;
+    }
+    &__copyright {
+      padding: 55px 15px 0;
+
+      color: #ffffff;
+
+      font-size: 0.75rem;
+    }
+  }
+  &-twitter {
+    display: flex;
+
+    margin-top: 2px;
+    &__image {
+      position: relative;
+      &::before {
+        position: absolute;
+        right: -19px;
+        bottom: -14px;
+
+        content: url(../img/twitter-speech-bubble.png);
+      }
+    }
+    &__description {
+      display: flex;
+      flex-direction: column;
+
+      margin-left: 14px;
+      span {
+        &:first-of-type {
+          color: #ffffff;
+
+          font-size: 1.5rem;
+        }
+        &:last-of-type {
+          color: #727272;
+
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+  &-post {
+    margin: 11px 30px 29px 37px;
+    padding: 20px 20px 19px;
+
+    border-radius: 10px;
+    background-color: rgba($dark-color, 0.4);
+    p {
+      margin: 12px 0 8px;
+
+      font-size: 0.75rem;
+      line-height: 18px;
+    }
+    span {
+      color: $accent-color;
+
+      font-size: 0.6225rem;
+      font-style: italic;
+    }
+  }
+  &-menu {
+    &__item {
+      a {
+        font-size: 0.675rem;
+      }
+    }
+  }
+}

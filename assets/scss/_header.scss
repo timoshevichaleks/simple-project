@@ -47,11 +47,11 @@
         text-align: center;
       }
       &:first-child {
-        background: linear-gradient(0deg, lighten($accent-color, 15%) 1%, $accent-color 50%);
+        background: linear-gradient(to bottom, #0f8bbe 0%, #2989d8 50%, #207cca 51%, #0eb7fe 100%);
       }
     }
     &__link {
-      padding: 13px 15px;
+      padding: 13px 15px 14px;
 
       color: $light-color;
       border-radius: 15px;
@@ -64,7 +64,7 @@
       }
       &--active {
         @media (min-width: $large + 1) {
-          background: linear-gradient(0deg, lighten($accent-color, 15%) 1%, $accent-color 50%);
+          background: linear-gradient(to bottom, #0f8bbe 0%, #2989d8 50%, #207cca 51%, #0eb7fe 100%);
         }
         ;
       }
