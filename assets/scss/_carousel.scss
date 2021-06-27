@@ -25,6 +25,10 @@
   background-image: url(../img/carousel-item-bg.png);
   background-position: 50% 50%;
   background-size: cover;
+  @media (max-width: $small) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &.active {
     position: relative;
     z-index: 1;
@@ -59,18 +63,14 @@
     @media (max-width: $small) {
       flex: 1 0 100%;
 
-      padding: 0 $gutter $gutter $gutter;
-    }
-    @media (max-width: $small) {
-      overflow: hidden;
-      flex: 1 0 100%;
-
       max-width: calc(100vw - 135px);
       margin: 0 0 $gutter 0;
 
       text-align: center;
-      white-space: nowrap;
       text-overflow: ellipsis;
+    }
+    @media (max-width: $xsmall) {
+      margin-bottom: 13px;
     }
   }
   &__text {
