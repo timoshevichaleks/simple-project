@@ -65,11 +65,12 @@
         padding: 15px 0;
         &:hover,
         &:focus {
-          border-radius: none;
+          border-radius: 0;
         }
       }
       &:hover,
       &:focus {
+        border-radius: 15px;
         background-color: rgba($base-color, 0.5);
       }
       &--active {
